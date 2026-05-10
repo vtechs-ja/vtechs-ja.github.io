@@ -1,37 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Vortex Technologies Limited - Coming Soon</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="logo">
-          <h1><span class="v-icon">V</span>ORTEX<span class="tech">TECHNOLOGIES</span></h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vortex Technologies Limited — Software Products & Technology Services</title>
+  <meta name="description" content="Vortex Technologies is a Jamaican product development company building innovative software products and delivering technology services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+      </div>
+      <div class="container hero-content reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Product Studio &middot; Jamaica
+        </div>
+        <h1 class="hero-title">
+          Building Software<br>
+          <span class="hero-highlight">Products That Matter</span>
+        </h1>
+        <p class="hero-subtitle">
+          Vortex Technologies is a product-first technology company based in Jamaica.
+          We design, build, and scale software products — and help businesses leverage
+          technology to grow.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">Explore Services</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch &rarr;</a>
         </div>
       </div>
-      <div class="content">
-        <div class="construction-card">
-          <div class="text-section">
-            <h1>We're Building<br>Something Amazing</h1>
-            <p class="subtitle">Our new website is under construction</p>
-            <div class="progress-bar"><div class="progress-fill"></div></div>
-            <p>At Vortex Technologies Limited, we're working to bring you innovative solutions.</p>
-            <a href="mailto:info@vtechs.com.jm" class="contact-button">Contact Us</a>
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left reveal">
+            <span class="section-label">About Vortex</span>
+            <h2 class="section-title">A Product Company<br>at Our Core</h2>
+            <p>Vortex Technologies Limited is a Jamaican technology company with a singular focus: building software products that solve real problems. From ideation through design, engineering, and launch, we take ideas and turn them into polished, production-ready products.</p>
+            <p>Beyond our own product work, we partner with businesses to deliver bespoke software solutions, manage cloud infrastructure, and provide strategic technology consultancy — all grounded in the same engineering discipline that drives our internal products.</p>
+            <a href="#services" class="btn btn-outline">See What We Offer</a>
           </div>
-          <div class="image-section">
-            <div class="construction-image"></div>
+          <div class="about-right reveal">
+            <div class="values-grid">
+              <div class="value-card">
+                <div class="value-icon">&#9700;</div>
+                <h4>Amplify What Exists</h4>
+                <p>Technology's greatest power lies in amplifying the inherent value within well-structured communities — not replacing it.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon">&#9671;</div>
+                <h4>Wisdom Before Innovation</h4>
+                <p>Every product we build is tethered to careful consideration of its real-world impact and long-term implications.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon">&#9651;</div>
+                <h4>Innovation for the Many</h4>
+                <p>We don't chase the cutting edge. We take what already works and expand its reach — bringing genuine value to a broader spread of people.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon">&#9675;</div>
+                <h4>Access Over Profit</h4>
+                <p>We believe in maximising empowerment through sustainable access. Technology should open doors, not gate them.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="footer">
-        <p>&copy; 2024 Vortex Technologies Limited. All Rights Reserved.</p>
-        <p>Email: <a href="mailto:info@vtechs.com.jm">info@vtechs.com.jm</a></p>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="products">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What We Build</span>
+          <h2 class="section-title">Our Products</h2>
+          <p class="section-desc">Building software products is at the heart of everything we do. Our portfolio spans multiple verticals — each product built in-house, from the ground up.</p>
+        </div>
+        <div class="products-grid">
+
+          <div class="product-card reveal" style="--card-accent: #3b82f6;">
+            <div class="product-header">
+              <div class="product-icon">&#9700;</div>
+              <span class="product-status">Coming Soon</span>
+            </div>
+            <h3 class="product-name">Learnaz</h3>
+            <div class="product-tags">
+              <span class="product-tag">Education</span>
+              <span class="product-tag">Mobile</span>
+            </div>
+            <p class="product-desc">A mobile-first app designed to make collaborative learning more engaging and effective. Built for students and educators who thrive together.</p>
+          </div>
+
+          <div class="product-card reveal" style="--card-accent: #10b981;">
+            <div class="product-header">
+              <div class="product-icon">&#9670;</div>
+              <span class="product-status">Coming Soon</span>
+            </div>
+            <h3 class="product-name">FinCore</h3>
+            <div class="product-tags">
+              <span class="product-tag">FinTech</span>
+              <span class="product-tag">Web App</span>
+            </div>
+            <p class="product-desc">A web-based personal finance management tool that helps you track spending, plan budgets, and take control of your financial health — simply and clearly.</p>
+          </div>
+
+          <div class="product-card reveal" style="--card-accent: #8b5cf6;">
+            <div class="product-header">
+              <div class="product-icon">&#9651;</div>
+              <span class="product-status">Coming Soon</span>
+            </div>
+            <h3 class="product-name">Conductor</h3>
+            <div class="product-tags">
+              <span class="product-tag">Developer Tools</span>
+              <span class="product-tag">AI</span>
+            </div>
+            <p class="product-desc">An orchestrator for self-hosting your own AI-enabled development server. Own your environment, control your stack, and build without limits.</p>
+          </div>
+
+          <div class="product-card reveal" style="--card-accent: #f59e0b;">
+            <div class="product-header">
+              <div class="product-icon">&#9711;</div>
+              <span class="product-status">Coming Soon</span>
+            </div>
+            <h3 class="product-name">OnTrack</h3>
+            <div class="product-tags">
+              <span class="product-tag">Community</span>
+              <span class="product-tag">WordPress</span>
+              <span class="product-tag">Mobile</span>
+            </div>
+            <p class="product-desc">A WordPress plugin, theme, and companion mobile app for community membership and content access management. One cohesive system for creators and community builders.</p>
+          </div>
+
+          <div class="product-card reveal" style="--card-accent: #06b6d4;">
+            <div class="product-header">
+              <div class="product-icon">&#9672;</div>
+              <span class="product-status">In Development</span>
+            </div>
+            <h3 class="product-name">Home &amp; Farm Automation</h3>
+            <div class="product-tags">
+              <span class="product-tag">IoT</span>
+              <span class="product-tag">Automation</span>
+            </div>
+            <p class="product-desc">Smart automation solutions for home and agricultural environments, built on Home Assistant. Bringing intelligent control to everyday living and farming operations.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">How We Can Help</span>
+          <h2 class="section-title">Services</h2>
+          <p class="section-desc">Alongside our product work, we offer a focused set of services for businesses looking to leverage the same expertise we apply internally.</p>
+        </div>
+        <div class="services-grid">
+
+          <div class="service-card reveal">
+            <div class="service-icon">&#9671;</div>
+            <h3>Web &amp; App Development</h3>
+            <p>Custom web applications and mobile apps built to your specifications. From marketing sites to complex business platforms, we deliver reliable, performant software on time.</p>
+            <ul class="service-list">
+              <li>Web applications &amp; portals</li>
+              <li>Mobile apps (iOS &amp; Android)</li>
+              <li>API development &amp; integrations</li>
+              <li>E-commerce &amp; payment solutions</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">&#9702;</div>
+            <h3>Cloud Services</h3>
+            <p>Cloud infrastructure setup, migration, and ongoing management. We help your business leverage cloud platforms securely, efficiently, and cost-effectively.</p>
+            <ul class="service-list">
+              <li>Cloud architecture &amp; migration</li>
+              <li>Infrastructure management</li>
+              <li>DevOps &amp; CI/CD pipelines</li>
+              <li>Security &amp; compliance</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">&#9675;</div>
+            <h3>Software Consultancy</h3>
+            <p>Strategic technology guidance for businesses at any stage. We assess your technology landscape, identify opportunities, and help you make the right decisions for long-term growth.</p>
+            <ul class="service-list">
+              <li>Technology audits &amp; reviews</li>
+              <li>Architecture &amp; system design</li>
+              <li>Digital transformation strategy</li>
+              <li>Vendor &amp; tooling selection</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-text reveal">
+            <span class="section-label label-light">Get In Touch</span>
+            <h2 class="section-title">Let's Build Something<br>Together</h2>
+            <p>Have a product idea? Looking for a technology partner? We'd love to hear from you. Reach out and let's start a conversation about what we can build together.</p>
+            <div class="contact-details">
+              <a href="mailto:info@vtechs.com.jm" class="contact-link">
+                <span class="contact-icon">&#9993;</span>
+                info@vtechs.com.jm
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-wrap reveal">
+            <form class="contact-form" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">What are you looking for?</label>
+                <select id="subject" name="subject">
+                  <option value="">Select a service...</option>
+                  <option value="Product Development">Product Development</option>
+                  <option value="Web &amp; App Development">Web &amp; App Development</option>
+                  <option value="Cloud Services">Cloud Services</option>
+                  <option value="Software Consultancy">Software Consultancy</option>
+                  <option value="General Inquiry">Other / General Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your project or inquiry..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            </form>
+            <div class="form-success" id="form-success" hidden>
+              <div class="success-icon">&#10003;</div>
+              <h3>Message Sent</h3>
+              <p>Your email client will open with your message pre-filled. We'll get back to you as soon as possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+        </a>
+        <p class="footer-tagline">Building software products from Jamaica for the world.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-copy">
+        <p>&copy; 2025 Vortex Technologies Limited. All Rights Reserved.</p>
+        <p>vtechs.com.jm</p>
       </div>
     </div>
-  </body>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
