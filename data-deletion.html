@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Deletion Request — Vortex Technologies Limited</title>
+  <meta name="description" content="Request deletion of your account and personal data from any Vortex Technologies Limited product.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .policy-hero {
+      background: var(--deep);
+      padding: 140px 0 72px;
+      text-align: center;
+    }
+    .policy-hero .section-label { color: var(--cyan); }
+    .policy-hero h1 {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .policy-hero .meta {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.48);
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .info-body {
+      background: var(--white);
+      padding: 72px 0 80px;
+    }
+    .info-content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .info-section {
+      margin-bottom: 48px;
+    }
+    .info-section h2 {
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .info-section p {
+      font-size: 0.96rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      margin-bottom: 12px;
+    }
+    .info-section ul {
+      padding-left: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 12px;
+    }
+    .info-section li {
+      font-size: 0.96rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .info-highlight {
+      background: rgba(29, 78, 216, 0.05);
+      border: 1px solid rgba(29, 78, 216, 0.12);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      margin: 16px 0 0;
+    }
+    .info-highlight p { margin-bottom: 0; font-size: 0.91rem; }
+
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4px;
+    }
+    .process-step {
+      display: flex;
+      gap: 18px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .process-step:last-child { border-bottom: none; }
+    .step-num {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      background: var(--blue);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-head);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-top: 2px;
+    }
+    .step-body h3 {
+      font-family: var(--font-head);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 5px;
+    }
+    .step-body p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .deletion-form-section {
+      background: var(--deep);
+      padding: 80px 0 100px;
+    }
+    .deletion-form-section .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .deletion-form-section .section-title { color: var(--white); }
+    .deletion-form-section .section-desc { color: rgba(255,255,255,0.52); }
+
+    .deletion-form-wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+    }
+    .deletion-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-check {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 16px 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 8px;
+    }
+    .form-check input[type="checkbox"] {
+      flex-shrink: 0;
+      width: 17px;
+      height: 17px;
+      margin-top: 3px;
+      accent-color: var(--blue-light);
+      cursor: pointer;
+    }
+    .form-check label {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.58);
+      line-height: 1.6;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .info-body { padding: 48px 0 60px; }
+      .deletion-form-section { padding: 52px 0 72px; }
+      .deletion-form-wrap { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#products" class="nav-link">Products</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="policy-hero">
+      <div class="container">
+        <span class="section-label">Privacy Rights</span>
+        <h1>Data Deletion Request</h1>
+        <p class="meta">Submit a request to permanently delete your account and personal data from any Vortex Technologies product.</p>
+      </div>
+    </section>
+
+    <!-- WHAT TO EXPECT -->
+    <section class="info-body">
+      <div class="container">
+        <div class="info-content">
+
+          <div class="info-section">
+            <h2>What Happens After You Submit</h2>
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                  <h3>We receive your request</h3>
+                  <p>Your request is sent directly to our privacy team. We aim to acknowledge all requests within 2 business days.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                  <h3>We verify your identity</h3>
+                  <p>To protect account holders, we will confirm your identity before processing any deletion. We'll contact you at the email address associated with your account.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                  <h3>We process the deletion</h3>
+                  <p>Once verified, we delete your account and associated personal data. We aim to complete all deletions within <strong>30 days of verification</strong>, in line with applicable data protection law.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-num">4</div>
+                <div class="step-body">
+                  <h3>We confirm completion</h3>
+                  <p>You'll receive a confirmation email when deletion is complete. Access to any associated accounts is permanently revoked at this point.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section">
+            <h2>What Will Be Deleted</h2>
+            <p>Upon successful verification the following will be permanently removed:</p>
+            <ul>
+              <li>Your account profile and login credentials</li>
+              <li>Personal information provided during registration</li>
+              <li>Usage data and preferences tied to your account</li>
+              <li>Any content or data you created within the product</li>
+            </ul>
+            <div class="info-highlight">
+              <p><strong>This action is irreversible.</strong> Once your data has been deleted it cannot be recovered. Please ensure you have saved anything you wish to keep before submitting.</p>
+            </div>
+          </div>
+
+          <div class="info-section">
+            <h2>What May Be Retained</h2>
+            <p>Some data may be retained after your request is processed, where required by law or legitimate business necessity:</p>
+            <ul>
+              <li>Financial and billing records (required for tax and legal compliance)</li>
+              <li>A record of your deletion request itself (for audit and compliance purposes)</li>
+              <li>Anonymised or aggregated data that cannot be used to identify you</li>
+              <li>Any data we are legally obligated to retain under applicable law</li>
+            </ul>
+            <p>Retained data is held for the minimum period required and is not used for marketing or product improvement.</p>
+          </div>
+
+          <div class="info-section">
+            <h2>Need Help or Have Questions?</h2>
+            <p>If you have questions about this process or want to discuss your options before submitting a request, you can reach our team directly at <a href="mailto:info@vtechs.com.jm" style="color:var(--blue);text-decoration:underline;text-underline-offset:3px;">info@vtechs.com.jm</a>.</p>
+            <p>You can also review our <a href="privacy-policy.html" style="color:var(--blue);text-decoration:underline;text-underline-offset:3px;">Privacy Policy</a> for full details on how we collect, use, and protect your data.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="deletion-form-section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-label label-light">Submit Your Request</span>
+          <h2 class="section-title">Account &amp; Data Deletion</h2>
+          <p class="section-desc">Fill in the details below. We'll follow up by email to verify your identity before proceeding.</p>
+        </div>
+
+        <div class="deletion-form-wrap">
+
+          <form class="deletion-form" id="deletion-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="del-name">Full Name</label>
+                <input type="text" id="del-name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="del-email">Account Email Address</label>
+                <input type="email" id="del-email" name="email" placeholder="Email linked to your account" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="del-product">Product / App</label>
+              <select id="del-product" name="product" required>
+                <option value="" disabled selected>Select a product</option>
+                <option value="Learnaz">Learnaz</option>
+                <option value="FinCore">FinCore</option>
+                <option value="Conductor">Conductor</option>
+                <option value="OnTrack">OnTrack</option>
+                <option value="Home &amp; Farm Automation Suite">Home &amp; Farm Automation Suite</option>
+                <option value="All Products">All Products</option>
+                <option value="Other / Not Listed">Other / Not Listed</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="del-reason">Reason for Deletion</label>
+              <select id="del-reason" name="reason" required>
+                <option value="" disabled selected>Select a reason</option>
+                <option value="No longer using the app">No longer using the app</option>
+                <option value="Privacy concerns">Privacy concerns</option>
+                <option value="Switching to a different service">Switching to a different service</option>
+                <option value="Account created by mistake">Account created by mistake</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="del-details">Additional Details <span style="opacity:0.45;">(optional)</span></label>
+              <textarea id="del-details" name="details" placeholder="Any context that may help us locate your account — e.g. a username, subscription type, or other identifying details."></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="del-confirm" name="confirm" required>
+              <label for="del-confirm">I understand that account and data deletion is permanent and irreversible. I am the account holder or an authorised representative, and I consent to this request being processed.</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Submit Deletion Request</button>
+          </form>
+
+          <div class="form-success" id="deletion-success" hidden>
+            <div class="success-icon">&#10003;</div>
+            <h3 style="color:var(--white);font-family:var(--font-head);margin:16px 0 10px;">Request Submitted</h3>
+            <p style="color:rgba(255,255,255,0.55);font-size:0.95rem;line-height:1.7;">Your deletion request has been sent. Please check that your email client sent the message. We'll be in touch within 2 business days to verify your identity and proceed.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+        </a>
+        <p class="footer-tagline">Building software products from Jamaica for the world.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="security-policy.html">Security Policy</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
+      <div class="footer-copy">
+        <p>&copy; 2025 Vortex Technologies Limited. All Rights Reserved.</p>
+        <p>vtechs.com.jm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
