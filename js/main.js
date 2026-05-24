@@ -30,17 +30,20 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // Contact form — opens mailto with form data
-document.getElementById('contact-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const form = e.target;
-  const name    = form.name.value.trim();
-  const email   = form.email.value.trim();
-  const subject = form.subject.value || 'General Inquiry';
-  const message = form.message.value.trim();
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name    = form.name.value.trim();
+    const email   = form.email.value.trim();
+    const subject = form.subject.value || 'General Inquiry';
+    const message = form.message.value.trim();
 
-  const body = `Name: ${name}\nEmail: ${email}\nService Interest: ${subject}\n\nMessage:\n${message}`;
-  window.location.href = `mailto:info@vtechs.com.jm?subject=Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(body)}`;
+    const body = `Name: ${name}\nEmail: ${email}\nService Interest: ${subject}\n\nMessage:\n${message}`;
+    window.location.href = `mailto:info@vtechs.com.jm?subject=Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(body)}`;
 
-  document.getElementById('contact-form').hidden = true;
-  document.getElementById('form-success').hidden = false;
-});
+    contactForm.hidden = true;
+    document.getElementById('form-success').hidden = false;
+  });
+}
