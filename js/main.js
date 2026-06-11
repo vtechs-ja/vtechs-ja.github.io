@@ -29,6 +29,33 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+// Scrollspy — highlight active nav link based on visible section
+const sections = document.querySelectorAll('main > section[id]');
+const navItems = document.querySelectorAll('.nav-links .nav-link');
+
+function setActiveNav(id) {
+  navItems.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+  });
+}
+
+const scrollspy = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) setActiveNav(entry.target.id);
+  });
+}, {
+  rootMargin: '-40% 0px -55% 0px',
+});
+
+sections.forEach(section => scrollspy.observe(section));
+
+// Fallback: activate Contact when scrolled to page bottom
+window.addEventListener('scroll', () => {
+  if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 10) {
+    setActiveNav('contact');
+  }
+}, { passive: true });
+
 // Data deletion form
 const deletionForm = document.getElementById('deletion-form');
 if (deletionForm) {

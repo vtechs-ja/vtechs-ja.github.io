@@ -244,6 +244,11 @@ a {
   background: rgba(255,255,255,0.08);
 }
 
+.nav-link.active {
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
+}
+
 .nav-cta {
   background: var(--blue);
   color: var(--white) !important;
