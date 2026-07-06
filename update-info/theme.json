@@ -1,11 +1,11 @@
 {
   "name": "Ontrack",
   "slug": "klac",
-  "version": "1.2.5",
-  "download_url": "https://vtechs.com.jm/releases/klac-1.2.5.zip",
-  "details_url": "https://vtechs.com.jm/releases/klac-1.2.5.zip",
+  "version": "1.2.6",
+  "download_url": "https://vtechs.com.jm/releases/klac-1.2.6.zip",
+  "details_url": "https://vtechs.com.jm/releases/klac-1.2.6.zip",
   "requires": "6.0",
   "tested": "6.5",
   "requires_php": "5.6",
-  "last_updated": "2026-07-01 13:41:23"
+  "last_updated": "2026-07-06 21:56:40"
 }
