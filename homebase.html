@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeBase — Household Collaboration App | Vortex Technologies</title>
+  <meta name="description" content="HomeBase gives every household member a shared view of what needs doing and who's doing it. No gamification, no nagging — just a well-run home.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* HomeBase — warm, cozy, family ("warm modernist") */
+    :root { --accent: #f97316; --radius: 18px; --radius-lg: 26px; --off-white: #fdf6ee; }
+    .feature-card { box-shadow: 0 1px 0 rgba(249,115,22,0.06); }
+    .feature-card:hover { box-shadow: 0 18px 44px rgba(249,115,22,0.14); }
+    .product-hero-icon { background: rgba(249,115,22,0.12); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#products" class="nav-link">Products</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-breadcrumb">
+          <a href="index.html">Home</a> &rarr; <a href="index.html#products">Products</a> &rarr; HomeBase
+        </div>
+        <div class="product-hero-top">
+          <div class="product-hero-icon">&#9679;</div>
+        </div>
+        <span class="product-hero-status"><span class="badge-dot"></span>In Real-World Testing</span>
+        <h1>HomeBase</h1>
+        <p class="product-hero-tagline">A household task coordination app for families. Every member — adults and children alike — gets a shared view of what the home needs and who's handling it. Rhythm-based, not deadline-driven. No gamification, no nagging — just a well-run home.</p>
+        <div class="product-hero-tags">
+          <span class="product-tag">Household</span>
+          <span class="product-tag">Mobile</span>
+          <span class="product-tag">Family</span>
+        </div>
+        <div class="product-hero-actions">
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Problem</span>
+          <h2 class="section-title">Running a home is a team effort — most tools forget that</h2>
+        </div>
+        <p class="product-lede">Most households lack a shared operating system, so the mental load falls disproportionately on one person. Tasks get missed not because people don't want to contribute, but because there's no shared picture of what needs doing, who's doing it, and whether the home is covered. Existing apps treat this as a motivation problem, rewarding task completion with points and badges — but the real problem is clarity and shared accountability, not motivation. Most of them are also built for parents to manage children, not for a household to operate as a genuine team.</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="product-section product-section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What HomeBase Does</span>
+          <h2 class="section-title">Clarity, not motivation</h2>
+          <p class="section-desc" style="margin:0;">HomeBase assumes people want to contribute — its job is to make it clear what needs doing, who is doing it, and whether the home is covered.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Task Library</h3>
+            <p>Household tasks organised by area, with a starter library of 30 common tasks — and support for multi-instance tasks like per-bathroom cleaning.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Rhythms, Not Deadlines</h3>
+            <p>Slot-based, window-based, and one-off scheduling models household work the way it actually happens — recurring and cyclical, not a to-do list.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Weekly Check-in</h3>
+            <p>A deliberate weekly ritual that generates the coming week's tasks, captures how the week went, and anchors a real family conversation.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Shared Household View</h3>
+            <p>Everyone sees the full picture — status-first, then by member — with personal tasks anchored at the top.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Assignment by Capability</h3>
+            <p>Tasks assigned based on what each member can actually do, with capability notes on every member's profile.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Supply Management</h3>
+            <p>Track what's running low, scan barcodes while restocking, and step through a guided "I went shopping" flow that covers the whole shop run.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPLES -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Design Principles</span>
+          <h2 class="section-title">What guides the product</h2>
+        </div>
+        <div class="principle-list grid-cards">
+          <div class="principle-item">
+            <span class="principle-num">01</span>
+            <div>
+              <h4>The Household Is a Team, Not a Hierarchy</h4>
+              <p>Every member contributes within their capability. HomeBase doesn't position parents as managers and children as workers — everyone is a participant in a shared home.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">02</span>
+            <div>
+              <h4>Clarity Over Motivation</h4>
+              <p>The app doesn't try to make people want to contribute — it assumes they do. Its job is to make the picture clear.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">03</span>
+            <div>
+              <h4>The Home Runs on Rhythm, Not Deadlines</h4>
+              <p>Household work is recurring and cyclical. The system models tasks as rhythms and windows, not due dates.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">04</span>
+            <div>
+              <h4>Show What Happened. Never Say What It Means.</h4>
+              <p>Contribution is made visible, not judged. Interpretation belongs to the people who live together, not to the app.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">05</span>
+            <div>
+              <h4>Infrastructure, Not Intervention</h4>
+              <p>The app is a system that runs quietly in the background. No push, no nag, no gamification.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">06</span>
+            <div>
+              <h4>Respect Existing Communication</h4>
+              <p>Households already have ways of talking to each other. HomeBase handles what those channels cannot: shared memory, structure, and visibility.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">07</span>
+            <div>
+              <h4>Built for Adults, Honest with Children</h4>
+              <p>The primary audience is adults who want a well-run home and are willing to have real conversations with their children about contribution.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">08</span>
+            <div>
+              <h4>Utility-First, Not Social</h4>
+              <p>Any shared or community features serve a utility purpose. HomeBase does not build a social graph, feed, or engagement loop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="product-cta">
+      <div class="container">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Testing with real households</h2>
+        <p>HomeBase is in active testing with real families. If you'd like to be one of them, or just want to follow along, get in touch.</p>
+        <div class="product-cta-actions">
+          <a href="index.html#contact" class="btn btn-accent">Contact Us</a>
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+        </a>
+        <p class="footer-tagline">Building software products from Jamaica for the world.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="security-policy.html">Security Policy</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
+      <div class="footer-copy">
+        <p>&copy; 2025 Vortex Technologies Limited. All Rights Reserved.</p>
+        <p>vtechs.com.jm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Camp — Educational Quiz Game Platform | Vortex Technologies</title>
+  <meta name="description" content="Quiz Camp is a competitive educational quiz game for Jamaican and Caribbean students — solo practice, multiplayer, and a full study hub built around the school curriculum.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Quiz Camp — playful, energetic, game */
+    :root { --accent: #3b82f6; --radius: 20px; --radius-lg: 28px; }
+    .product-hero::before {
+      background: radial-gradient(circle, var(--accent) 0%, transparent 68%);
+      width: 640px; height: 640px; top: -220px; right: -200px; opacity: 0.4;
+    }
+    .product-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #a855f7 0%, transparent 70%);
+      filter: blur(90px);
+      opacity: 0.3;
+      pointer-events: none;
+    }
+    .feature-card { transition: transform 0.25s cubic-bezier(.34,1.56,.64,1), box-shadow 0.25s ease; }
+    .feature-card:nth-child(3n+1) { border-top-color: var(--accent); }
+    .feature-card:nth-child(3n+2) { border-top-color: #a855f7; }
+    .feature-card:nth-child(3n+3) { border-top-color: #06b6d4; }
+    .feature-card:hover { transform: translateY(-6px) rotate(-0.6deg) scale(1.02); }
+    .persona-card:nth-child(1) .persona-label { color: var(--accent); }
+    .persona-card:nth-child(2) .persona-label { color: #a855f7; }
+    .persona-card:nth-child(3) .persona-label { color: #06b6d4; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#products" class="nav-link">Products</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-breadcrumb">
+          <a href="index.html">Home</a> &rarr; <a href="index.html#products">Products</a> &rarr; Quiz Camp
+        </div>
+        <div class="product-hero-top">
+          <div class="product-hero-icon"><img src="images/quiz-camp-icon.jpg" alt="Quiz Camp icon"></div>
+        </div>
+        <span class="product-hero-status"><span class="badge-dot"></span>Submitted to Google Play</span>
+        <h1>Quiz Camp</h1>
+        <p class="product-hero-tagline">A competitive educational quiz game platform for Jamaican and Caribbean students. Solo practice, online multiplayer, and pass-the-phone play — all built around a Caribbean school curriculum question bank, with a full study hub to back it up.</p>
+        <div class="product-hero-tags">
+          <span class="product-tag">Education</span>
+          <span class="product-tag">Mobile</span>
+        </div>
+        <div class="product-hero-actions">
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IT IS -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What It Is</span>
+          <h2 class="section-title">Study together, for fun and effectiveness</h2>
+        </div>
+        <p class="product-lede">Quiz Camp combines solo practice, online multiplayer, and local pass-the-phone play around a Caribbean school curriculum question bank, aligned to CSEC and primary school syllabuses. Alongside the game, a full study hub offers adaptive flashcards, a global and regional leaderboard, and an XP/badge progression system — built to maximise the quiz concept for group learning and engagement.</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="product-section product-section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">How It Works</span>
+          <h2 class="section-title">Play your way, study smarter</h2>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Solo Practice</h3>
+            <p>Timed quiz rounds with adaptive question selection — wrong answers surface more frequently until they stick.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Daily Challenge</h3>
+            <p>One fixed challenge per day, with completion tracking and a streak calendar to keep the habit going.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Online Multiplayer</h3>
+            <p>Join by a 6-character code and go head-to-head with real-time synced questions, buzzes, and live opponent scores.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Local Multiplayer</h3>
+            <p>Pass-the-phone play for multiple players on one device — perfect for study groups without everyone needing their own login.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Study Hub</h3>
+            <p>Flashcard-based study mode with adaptive difficulty and wrong-answer explanations shown right on the card back.</p>
+          </div>
+          <div class="feature-card">
+            <h3>XP, Badges &amp; Leaderboards</h3>
+            <p>XP earned per game, unlockable badges, daily streaks, and country/global/city leaderboard tabs to keep the competition going.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Who It's For</span>
+          <h2 class="section-title">Jamaican and Caribbean students</h2>
+        </div>
+        <div class="persona-grid">
+          <div class="persona-card">
+            <span class="persona-label">Primary Tier</span>
+            <p>Primary school students across Jamaica, practising against a curriculum-aligned question bank built for their level.</p>
+          </div>
+          <div class="persona-card">
+            <span class="persona-label">High School Tier</span>
+            <p>Secondary school students studying toward CSEC — competitive practice that makes revision feel like a game, not a chore.</p>
+          </div>
+          <div class="persona-card">
+            <span class="persona-label">Teachers &amp; Parents</span>
+            <p>A curriculum-aligned practice tool that fits naturally alongside classroom teaching and at-home study.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="product-cta">
+      <div class="container">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Coming soon to Google Play</h2>
+        <p>Quiz Camp is submitted for Google Play review, with iOS distribution to follow. Reach out if you'd like early access or want to bring it into your classroom.</p>
+        <div class="product-cta-actions">
+          <a href="index.html#contact" class="btn btn-accent">Contact Us</a>
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+        </a>
+        <p class="footer-tagline">Building software products from Jamaica for the world.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="security-policy.html">Security Policy</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
+      <div class="footer-copy">
+        <p>&copy; 2025 Vortex Technologies Limited. All Rights Reserved.</p>
+        <p>vtechs.com.jm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

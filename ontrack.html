@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnTrack — Community Membership &amp; Content Platform | Vortex Technologies</title>
+  <meta name="description" content="OnTrack combines a WordPress plugin, theme, and companion mobile app for community membership and content access management — one cohesive system for administration and distribution.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* OnTrack — institutional, structured, trustworthy */
+    :root { --accent: #f59e0b; --radius: 10px; --radius-lg: 14px; }
+    .product-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(245,158,11,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245,158,11,0.08) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 75%);
+      pointer-events: none;
+    }
+    .feature-card { border-top-width: 3px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#products" class="nav-link">Products</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-breadcrumb">
+          <a href="index.html">Home</a> &rarr; <a href="index.html#products">Products</a> &rarr; OnTrack
+        </div>
+        <div class="product-hero-top">
+          <div class="product-hero-icon">&#9711;</div>
+        </div>
+        <span class="product-hero-status"><span class="badge-dot"></span>Coming Soon</span>
+        <h1>OnTrack</h1>
+        <p class="product-hero-tagline">A WordPress plugin, theme, and companion mobile app for community membership and content access management — one cohesive system for administration and distribution.</p>
+        <div class="product-hero-tags">
+          <span class="product-tag">Community</span>
+          <span class="product-tag">WordPress</span>
+          <span class="product-tag">Mobile</span>
+        </div>
+        <div class="product-hero-actions">
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IT IS -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What It Is</span>
+          <h2 class="section-title">Membership, content, and app — one platform</h2>
+        </div>
+        <p class="product-lede">OnTrack ties together three components into a single system: a WordPress plugin that handles all membership logic and access control, a WordPress theme that presents the same content on the web, and a branded React Native mobile app for members. The mobile app authenticates against your WordPress site and pulls navigation, content, and events from a REST API that enforces your membership and group rules on every response — so the web and the app are always in sync.</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="product-section product-section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What OnTrack Does</span>
+          <h2 class="section-title">Built for real community structure</h2>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Membership &amp; Hierarchical Groups</h3>
+            <p>Admin-assigned membership with groups that nest — a member in a child group automatically inherits access granted to its parent groups.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Audio &amp; Video Library</h3>
+            <p>Collections with a per-item access level — public, any logged-in visitor, or full members only — enforced consistently across web and app.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Events</h3>
+            <p>Upcoming events with a banner image, date, time, location, and an optional live-stream link, surfaced on both the site and the mobile app.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Branded Mobile App</h3>
+            <p>A tab bar driven entirely by your WordPress navigation menu, biometric sign-in, offline detection, and Universal Links for password reset that open the app directly.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Secure by Design</h3>
+            <p>Dual-token JWT authentication with automatic refresh, and a self-updating plugin that checks for new versions without manual intervention.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Standing Up a New Community</h3>
+            <p>Every community-specific value — name, branding, bundle IDs, deep links — lives in configuration, so a new instance doesn't require forking the codebase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Who It's For</span>
+          <h2 class="section-title">Organisations with a community to manage</h2>
+        </div>
+        <div class="persona-grid">
+          <div class="persona-card">
+            <span class="persona-label">Churches &amp; Faith Groups</span>
+            <p>Membership records, group-based access, and a dedicated content library for sermons, teaching, and events.</p>
+          </div>
+          <div class="persona-card">
+            <span class="persona-label">Membership Associations</span>
+            <p>Demographic tracking, group rosters, and controlled access to member-only content and resources.</p>
+          </div>
+          <div class="persona-card">
+            <span class="persona-label">Content-Led Communities</span>
+            <p>Any organisation that wants a branded app and members area without building a platform from scratch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="product-cta">
+      <div class="container">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Have a community to bring online?</h2>
+        <p>OnTrack is built and ready to configure for a new community. Tell us about your organisation and what you need.</p>
+        <div class="product-cta-actions">
+          <a href="index.html#contact" class="btn btn-accent">Contact Us</a>
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+        </a>
+        <p class="footer-tagline">Building software products from Jamaica for the world.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="security-policy.html">Security Policy</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
+      <div class="footer-copy">
+        <p>&copy; 2025 Vortex Technologies Limited. All Rights Reserved.</p>
+        <p>vtechs.com.jm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common Ground — Household Financial Alignment App | Vortex Technologies</title>
+  <meta name="description" content="Common Ground is a shared financial planning app for couples. See the same picture, align on goals, and check in together — no bank integration required.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Common Ground — calm, warm-trust, partner-aligned */
+    :root { --accent: #2563EB; --radius: 20px; --radius-lg: 28px; --off-white: #f5f8ff; }
+    .feature-card, .persona-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .feature-card:hover { transform: translateY(-3px) scale(1.01); box-shadow: 0 16px 40px rgba(37,99,235,0.12); }
+    .product-hero::after {
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: -10%;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--cyan) 0%, transparent 70%);
+      filter: blur(90px);
+      opacity: 0.16;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#products" class="nav-link">Products</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-breadcrumb">
+          <a href="index.html">Home</a> &rarr; <a href="index.html#products">Products</a> &rarr; Common Ground
+        </div>
+        <div class="product-hero-top">
+          <div class="product-hero-icon">&#9670;</div>
+        </div>
+        <span class="product-hero-status"><span class="badge-dot"></span>In Development</span>
+        <h1>Common Ground</h1>
+        <p class="product-hero-tagline">A shared financial planning app for couples. Both partners see the same picture — income, spending, assets, liabilities, and goals — with a monthly check-in to stay aligned and build toward shared milestones together.</p>
+        <div class="product-hero-tags">
+          <span class="product-tag">Finance</span>
+          <span class="product-tag">Mobile</span>
+          <span class="product-tag">Couples</span>
+        </div>
+        <div class="product-hero-actions">
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Problem</span>
+          <h2 class="section-title">Most couples don't lack money — they lack alignment</h2>
+        </div>
+        <p class="product-lede">Traditional expense trackers require daily data entry and bank API integrations that are unavailable or unreliable in markets like Jamaica. There's no lightweight tool designed to keep household partners on the same financial page at a high level — focused on goals, commitments, and periodic check-ins rather than transaction-by-transaction tracking.</p>
+        <p class="product-lede">Two deeper problems compound it: most tools only model fixed monthly costs, ignoring irregular expenses like car servicing or back-to-school costs — so a household looks like it has a surplus but consistently feels like it doesn't. And without a record over time, couples can't answer "are we making progress?" or "when will we reach our goal?"</p>
+      </div>
+    </section>
+
+    <!-- SOLUTION / PILLARS -->
+    <section class="product-section product-section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">How It Works</span>
+          <h2 class="section-title">Three pillars, one shared picture</h2>
+          <p class="section-desc" style="margin:0;">The value is in communication and accountability, not data automation. Input is intentional and infrequent — the value comes from shared understanding, not transaction accuracy.</p>
+        </div>
+        <div class="feature-grid cols-2">
+          <div class="feature-card">
+            <h3>Shared Financial Picture</h3>
+            <p>Each partner enters income — approximate is fine. Commitments are amortised, including quarterly and annual expenses, into a true monthly equivalent, so the dashboard reflects what you actually need to set aside each month. A net worth view rounds out the picture: what you own against what you owe.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Shared Goals</h3>
+            <p>Savings goals, debt payoff goals, and gap reduction goals — each with a target, a monthly contribution, and a projected completion date calculated from your real history, not just the number you typed in.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Monthly Check-in &amp; History</h3>
+            <p>The deliberate close of each month: both partners review what happened, compare it to the plan, and agree on the path forward. Completing it records a financial snapshot — building a longitudinal record you can look back on.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Built for Jamaica &amp; the Caribbean</h3>
+            <p>Multi-currency (JMD + USD) from day one. Informal debt captured explicitly as a liability type. No bank connection required — a real fit for a market where open banking simply isn't there yet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPLES -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Design Principles</span>
+          <h2 class="section-title">What guides the product</h2>
+        </div>
+        <div class="principle-list grid-cards">
+          <div class="principle-item">
+            <span class="principle-num">01</span>
+            <div>
+              <h4>Radical Transparency Between Partners</h4>
+              <p>Financial alignment only works when both partners are fully open. No private fields, no separate views, no hidden balances.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">02</span>
+            <div>
+              <h4>Alignment Over Automation</h4>
+              <p>The goal isn't to automate your finances but to align your household. The value comes from shared understanding, not data accuracy.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">03</span>
+            <div>
+              <h4>Planning Over Tracking</h4>
+              <p>Common Ground focuses on where you're going, not where every dollar went — high-level, long-term thinking over day-to-day monitoring.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">04</span>
+            <div>
+              <h4>The Household Is Two People, Not One</h4>
+              <p>Most finance apps treat a household as a single entity. Common Ground acknowledges it's two people with shared goals and individual contexts — and designs for that relationship dynamic.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">05</span>
+            <div>
+              <h4>Family Inclusion, Age-Appropriately</h4>
+              <p>Children can be given a curated, read-only view of selected family goals — building financial literacy naturally without exposing the full household picture.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">06</span>
+            <div>
+              <h4>Meet Households Where They Are</h4>
+              <p>Surplus or deficit, debt-free or debt-laden — the app adapts to your reality without judgment. Progress is progress, wherever you're starting from.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">07</span>
+            <div>
+              <h4>Financial Health Is a Story, Not a Number</h4>
+              <p>A net worth figure alone doesn't tell you if a household is in trouble or on track. Common Ground helps households understand where they stand, where they're headed, and how they feel about it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="product-cta">
+      <div class="container">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Building toward something together?</h2>
+        <p>Common Ground is in active development. If the problem sounds familiar, we'd love to hear from you.</p>
+        <div class="product-cta-actions">
+          <a href="index.html#contact" class="btn btn-accent">Contact Us</a>
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+        </a>
+        <p class="footer-tagline">Building software products from Jamaica for the world.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="security-policy.html">Security Policy</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
+      <div class="footer-copy">
+        <p>&copy; 2025 Vortex Technologies Limited. All Rights Reserved.</p>
+        <p>vtechs.com.jm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

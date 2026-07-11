@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinCore — Self-Hosted Personal Finance App | Vortex Technologies</title>
+  <meta name="description" content="FinCore is a privacy-first, self-hosted personal finance app. Your data lives in your own database — no bank credentials stored, no third-party financial intermediaries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* FinCore — fintech, minimal, engineered ("ledger") */
+    :root { --accent: #10b981; --radius: 6px; --radius-lg: 8px; }
+    .product-hero-status, .product-hero-tags .product-tag, .product-breadcrumb {
+      font-family: 'Courier New', monospace;
+    }
+    .feature-card { transition: border-color 0.2s ease, transform 0.2s ease; }
+    .feature-card:hover { transform: none; border-color: var(--accent); box-shadow: none; }
+    .product-hero-icon { border-radius: var(--radius); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#products" class="nav-link">Products</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-breadcrumb">
+          <a href="index.html">Home</a> &rarr; <a href="index.html#products">Products</a> &rarr; FinCore
+        </div>
+        <div class="product-hero-top">
+          <div class="product-hero-icon">&#9670;</div>
+        </div>
+        <span class="product-hero-status"><span class="badge-dot"></span>Coming Soon</span>
+        <h1>FinCore</h1>
+        <p class="product-hero-tagline">A self-hosted personal finance app, built privacy-first. All your data lives in a database you control — no bank credentials stored, no third-party financial data intermediaries. Track spending, plan budgets, and take control of your financial health, simply and clearly.</p>
+        <div class="product-hero-tags">
+          <span class="product-tag">FinTech</span>
+          <span class="product-tag">Web App</span>
+        </div>
+        <div class="product-hero-actions">
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IT IS -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What It Is</span>
+          <h2 class="section-title">Privacy-first, by design</h2>
+        </div>
+        <p class="product-lede">FinCore ships as a full web application with a PWA layer for mobile use, plus a Home Assistant add-on for anyone who wants to run it entirely on their own hardware. Bank connectivity is designed around the SimpleFIN Protocol — a read-only bank data standard — so your credentials are never stored, and there's no third-party middleman sitting on top of your financial data.</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="product-section product-section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What FinCore Does</span>
+          <h2 class="section-title">See your full financial picture</h2>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Accounts &amp; Transactions</h3>
+            <p>Track checking, savings, credit, investment, and other accounts, with categorised transactions and multi-currency support.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Budgeting</h3>
+            <p>Category-based budget rules with monthly, yearly, or weekly periods, rollover, and alert thresholds when you're over.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Dashboard &amp; Insights</h3>
+            <p>Savings rate, spending velocity, budget adherence, top merchants, and category trends — the picture at a glance.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Household Workspaces</h3>
+            <p>Workspace isolation with owner, write, and read roles, so a household or small team can share one financial picture.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Self-Hosted Option</h3>
+            <p>A Home Assistant add-on packages FinCore for anyone who wants to run it on their own infrastructure, not ours.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Installable PWA</h3>
+            <p>Installable on Android and iOS with a mobile-first bottom tab bar — no app store required.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATUS -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Where Things Stand</span>
+          <h2 class="section-title">Paused on the hardest part — automated bank data</h2>
+        </div>
+        <p class="product-lede">FinCore's core promise is seeing your full financial picture without manual data entry. That depends on reliable, automated bank data — and Jamaican banks currently have no SimpleFIN support or open banking APIs to plug into. We've built a Claude-powered PDF statement import as a manual workaround, but it isn't the seamless experience the product deserves, so active development is on pause until a workable path to automated bank data emerges for the Caribbean market.</p>
+      </div>
+    </section>
+
+    <!-- DESIGN DECISIONS -->
+    <section class="product-section product-section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Design Decisions</span>
+          <h2 class="section-title">Built privacy-first, on purpose</h2>
+        </div>
+        <div class="principle-list grid-cards">
+          <div class="principle-item">
+            <span class="principle-num">01</span>
+            <div>
+              <h4>SimpleFIN Over Plaid</h4>
+              <p>Read-only, no credential sharing. Works outside the US banking ecosystem in theory — the honest limitation today is that Jamaican bank coverage isn't there yet in practice.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">02</span>
+            <div>
+              <h4>PWA Over Native Mobile</h4>
+              <p>The primary use case is online-first, so FinCore ships as an installable web app rather than a native app store download — still the right call.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">03</span>
+            <div>
+              <h4>Claude for PDF Parsing</h4>
+              <p>Generic PDF libraries can't handle arbitrary bank statement layouts. Claude's vision capability reads them reliably as a fallback data path.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">04</span>
+            <div>
+              <h4>No Third-Party Financial Intermediaries</h4>
+              <p>Your data lives in a database you control. Bank credentials are never stored, and no third party sits between you and your own financial picture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="product-cta">
+      <div class="container">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Want to know when it's back?</h2>
+        <p>If you're a Jamaican bank, fintech, or aggregator with an API we could build on — or you just want to be first in line when development resumes — reach out.</p>
+        <div class="product-cta-actions">
+          <a href="index.html#contact" class="btn btn-accent">Contact Us</a>
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+        </a>
+        <p class="footer-tagline">Building software products from Jamaica for the world.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="security-policy.html">Security Policy</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
+      <div class="footer-copy">
+        <p>&copy; 2025 Vortex Technologies Limited. All Rights Reserved.</p>
+        <p>vtechs.com.jm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
