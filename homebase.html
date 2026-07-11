@@ -8,12 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    /* HomeBase — warm, cozy, family ("warm modernist") */
-    :root { --accent: #f97316; --radius: 18px; --radius-lg: 26px; --off-white: #fdf6ee; }
-    .feature-card { box-shadow: 0 1px 0 rgba(249,115,22,0.06); }
-    .feature-card:hover { box-shadow: 0 18px 44px rgba(249,115,22,0.14); }
-    .product-hero-icon { background: rgba(249,115,22,0.12); }
+    /* HomeBase — warm, cozy, family (the app's real "Warm Modernist" identity: parchment + terracotta + Nunito) */
+    :root { --accent: #c05621; --radius: 18px; --radius-lg: 26px; --off-white: #faf8f5; }
+    .product-hero h1, .section-title, .feature-card h3, .persona-card .persona-label, .principle-item h4 {
+      font-family: 'Nunito', var(--font-head);
+    }
+    .feature-card { box-shadow: 0 1px 0 rgba(192,86,33,0.06); }
+    .feature-card:hover { box-shadow: 0 18px 44px rgba(192,86,33,0.14); }
+    .product-hero-icon { background: rgba(192,86,33,0.14); }
   </style>
 </head>
 <body>
@@ -104,7 +108,15 @@
           </div>
           <div class="feature-card">
             <h3>Supply Management</h3>
-            <p>Track what's running low, scan barcodes while restocking, and step through a guided "I went shopping" flow that covers the whole shop run.</p>
+            <p>Two thresholds per item — flag it Low, and know the ideal amount to keep on hand. Restock with a real-time, multi-member shop run: scan a barcode, and brand, volume, and price history fill in automatically.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Make It Yours</h3>
+            <p>Each member picks their own accent colour — terracotta, cobalt blue, forest green, violet, ocean teal, or rose — a personal touch that lives on their device.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Household Roles</h3>
+            <p>Admin, Parent, and Member tiers. Parents can manage tasks, supplies, and the weekly check-in without needing full admin access to household settings.</p>
           </div>
         </div>
       </div>
