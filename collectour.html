@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CollectOur — Shared Collections App | Vortex Technologies</title>
+  <meta name="description" content="CollectOur is a mobile app for building personal or shared collections of physical items — starting with books — by scanning barcodes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* CollectOur — tactile, catalogued, shelf-like */
+    :root { --accent: #7c3aed; --radius: 12px; --radius-lg: 16px; }
+    .product-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(90deg, rgba(124,58,237,0.09) 0 14px, transparent 14px 22px, rgba(124,58,237,0.05) 22px 30px, transparent 30px 44px);
+      mask-image: linear-gradient(to top, black, transparent 45%);
+      pointer-events: none;
+    }
+    .feature-card { border-top-width: 3px; }
+    .product-hero-icon { background: rgba(124,58,237,0.14); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#products" class="nav-link">Products</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-breadcrumb">
+          <a href="index.html">Home</a> &rarr; <a href="index.html#products">Products</a> &rarr; CollectOur
+        </div>
+        <div class="product-hero-top">
+          <div class="product-hero-icon">&#9638;</div>
+        </div>
+        <span class="product-hero-status"><span class="badge-dot"></span>Coming Soon</span>
+        <h1>CollectOur</h1>
+        <p class="product-hero-tagline">Build personal or shared collections of the physical things you own — starting with books. Scan a barcode, confirm the details, and your shelf is catalogued. Keep a collection to yourself, or share it with the people you trust.</p>
+        <div class="product-hero-tags">
+          <span class="product-tag">Collections</span>
+          <span class="product-tag">Mobile</span>
+          <span class="product-tag">Sharing</span>
+        </div>
+        <div class="product-hero-actions">
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IT IS -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What It Is</span>
+          <h2 class="section-title">A catalogue for what's on your shelves</h2>
+        </div>
+        <p class="product-lede">CollectOur is a native mobile app for Android and iOS that turns a pile of books into a searchable, shareable collection. Point your camera at a barcode and CollectOur looks up the title, authors, genre, publisher, and cover for you — you just review and save.</p>
+        <p class="product-lede">Collections can stay private, or be shared with other people as managers who help build the collection or viewers who can browse it. A household library, a book club's shelf, or a classroom's reading corner can all be kept in one place, by everyone who looks after it.</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="product-section product-section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">How It Works</span>
+          <h2 class="section-title">From scan to shelf in seconds</h2>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Barcode Scanning</h3>
+            <p>Fast, native camera scanning of ISBN barcodes, with automatic lookup of book details from public catalogues and a manual-entry fallback when a book can't be found.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Review Before Saving</h3>
+            <p>Every scan lands on a confirm screen so you can correct the title, authors, or genre before it goes into your collection.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Duplicate Detection</h3>
+            <p>Scan a book you already have and CollectOur asks whether it's another copy or a mistake — no accidental double entries.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Shared Collections</h3>
+            <p>Invite other people as managers who can add and edit items, or viewers who can browse. Access is enforced on the server, not just in the app.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Collection Overview</h3>
+            <p>See at a glance how many items you have, broken down by genre and published year, and how many distinct authors are on your shelves.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Filter, Sort &amp; Export</h3>
+            <p>Filter and sort any collection, and export it to an Excel spreadsheet straight from your phone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Who It's For</span>
+          <h2 class="section-title">Anyone who keeps a shelf</h2>
+        </div>
+        <div class="persona-grid">
+          <div class="persona-card">
+            <span class="persona-label">Personal Collectors</span>
+            <p>Readers who want to know exactly what they own — and stop buying the same book twice.</p>
+          </div>
+          <div class="persona-card">
+            <span class="persona-label">Households</span>
+            <p>Families who share a home library and want everyone to be able to add to it and find what's there.</p>
+          </div>
+          <div class="persona-card">
+            <span class="persona-label">Clubs &amp; Groups</span>
+            <p>Book clubs, classrooms, churches, and community groups maintaining a shared shelf of physical books.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="product-section product-section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What's Next</span>
+          <h2 class="section-title">Books first. Everything else next.</h2>
+          <p class="section-desc" style="margin:0;">CollectOur is launching in beta with books. The longer-term vision is a community inventory for any shareable physical item.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>More Categories</h3>
+            <p>Games, CDs, DVDs, tools, and more — each with the details that matter for that kind of item.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Communities</h3>
+            <p>Grant a whole group access to a collection at once, with community admins and invites.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Lending &amp; Trading</h3>
+            <p>Track who borrowed what and when it's due back, and trade items between members.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="product-cta">
+      <div class="container">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Coming soon to Google Play</h2>
+        <p>CollectOur is preparing for its beta launch on Google Play, with iOS to follow. If you'd like early access for your household, club, or classroom, reach out.</p>
+        <div class="product-cta-actions">
+          <a href="index.html#contact" class="btn btn-accent">Contact Us</a>
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+        </a>
+        <p class="footer-tagline">Building software products from Jamaica for the world.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="security-policy.html">Security Policy</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
+      <div class="footer-copy">
+        <p>&copy; 2025 Vortex Technologies Limited. All Rights Reserved.</p>
+        <p>vtechs.com.jm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
