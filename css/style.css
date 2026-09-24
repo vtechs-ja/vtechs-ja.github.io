@@ -965,8 +965,14 @@ a.product-card:hover .product-card-more {
     display: flex;
   }
 
+  .nav-logo {
+    flex-wrap: wrap;
+  }
+
   .logo-sub {
-    display: none;
+    flex-basis: 100%;
+    margin: 4px -0.2em 0 0;
+    letter-spacing: 0.2em;
   }
 
   .hero-content {
