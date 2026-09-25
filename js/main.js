@@ -83,11 +83,11 @@ if (contactForm) {
     const form = e.target;
     const name    = form.name.value.trim();
     const email   = form.email.value.trim();
-    const subject = form.subject.value || 'General Inquiry';
+    const subject = form.subject.value || 'General Enquiry';
     const message = form.message.value.trim();
 
     const body = `Name: ${name}\nEmail: ${email}\nService Interest: ${subject}\n\nMessage:\n${message}`;
-    window.location.href = `mailto:info@vtechs.com.jm?subject=Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:info@vtechs.com.jm?subject=Enquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(body)}`;
 
     contactForm.hidden = true;
     document.getElementById('form-success').hidden = false;
