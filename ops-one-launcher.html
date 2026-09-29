@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ops One Launcher — Android Home Screen | Vortex Technologies</title>
+  <meta name="description" content="Ops One Launcher is an Android home screen that starts with what you want to do. Tap a verb, and it finds the right app. Private by design: no account, no ads, no analytics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Ops One Launcher — HUD-style home screen: deep navy, cyan accent, Rajdhani labels */
+    :root { --accent: #0891b2; --radius: 10px; --radius-lg: 14px; }
+    .product-hero { background: #080C13; }
+    .product-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(92,200,230,0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(92,200,230,0.07) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
+    }
+    .product-hero h1, .section-label, .feature-card h3, .principle-item h4 {
+      font-family: 'Rajdhani', var(--font-head);
+      letter-spacing: 0.02em;
+    }
+    .product-hero-icon { background: rgba(92,200,230,0.12); color: #5CC8E6; }
+    .verb-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .verb-chip {
+      font-family: 'Rajdhani', var(--font-head);
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(8,145,178,0.35);
+      color: #0e7490;
+      background: rgba(8,145,178,0.06);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#products" class="nav-link">Products</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-breadcrumb">
+          <a href="index.html">Home</a> &rarr; <a href="index.html#products">Products</a> &rarr; Ops One Launcher
+        </div>
+        <div class="product-hero-top">
+          <div class="product-hero-icon">&#9672;</div>
+        </div>
+        <span class="product-hero-status"><span class="badge-dot"></span>Coming Soon</span>
+        <h1>Ops One Launcher</h1>
+        <p class="product-hero-tagline">The Android home screen that starts with what you want to do. Tap a verb &mdash; call, message, go, play &mdash; and Ops One finds the right app. It learns your habits on your phone, and that data never leaves it.</p>
+        <div class="product-hero-tags">
+          <span class="product-tag">Android</span>
+          <span class="product-tag">Launcher</span>
+          <span class="product-tag">Privacy</span>
+        </div>
+        <div class="product-hero-actions">
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Problem</span>
+          <h2 class="section-title">You think in tasks. Your phone shows you a grid of icons.</h2>
+        </div>
+        <p class="product-lede">Most home screens are an app drawer with a clock on top. When you want to call someone, get directions, or start a timer, you first have to remember which app does it and where you put it. Home screens that try to be smarter usually do it by sending your habits to the cloud. Ops One takes a different approach. It starts from the action, works out the app for you, and does all of its learning on your phone.</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="product-section product-section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What Ops One Launcher Does</span>
+          <h2 class="section-title">Tap what you want to do, not which app</h2>
+          <p class="section-desc" style="margin:0;">Your phone is organised into areas &mdash; Now, People, Go, Play, Capture, Tools, and Device &mdash; built around the things you actually do.</p>
+          <div class="verb-row" aria-hidden="true">
+            <span class="verb-chip">Call</span><span class="verb-chip">Message</span><span class="verb-chip">Navigate</span><span class="verb-chip">Play</span><span class="verb-chip">Photo</span><span class="verb-chip">Timer</span>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Verbs with Smart Fallback</h3>
+            <p>Each action resolves to the right app, shortcut, or system action, with a fallback chain if your first choice isn&rsquo;t installed. Actions with nothing to handle them simply don&rsquo;t appear.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Suggestions That Explain Themselves</h3>
+            <p>Ops One learns what you open at different times of day and on different days of the week. Every suggestion shows how confident it is and a &ldquo;Why this?&rdquo; explanation, and you can tell it &ldquo;Not now&rdquo; or &ldquo;Don&rsquo;t suggest&rdquo;.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Your People, One Tap Away</h3>
+            <p>Starred favourites and recent conversations from your messaging apps sit together. Pick a person, then call, text, or open WhatsApp.</p>
+          </div>
+          <div class="feature-card">
+            <h3>One Search for Everything</h3>
+            <p>Search replaces the app drawer. It finds apps, contacts, actions, and app shortcuts in one place, and apps sort themselves into the right area &mdash; including the banking apps Jamaicans use every day.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Now Playing, Front and Centre</h3>
+            <p>Media controls for whatever&rsquo;s playing sit on the Now screen, next to your suggestions and pinned actions.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Make It Yours</h3>
+            <p>Switch between the Modern Blue and Retro Frame themes, each with night and driving variants, and set a matching lock screen in one tap. The layout adapts to phones and tablets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPLES -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Design Principles</span>
+          <h2 class="section-title">What guides the product</h2>
+        </div>
+        <div class="principle-list grid-cards">
+          <div class="principle-item">
+            <span class="principle-num">01</span>
+            <div>
+              <h4>Start from the Action</h4>
+              <p>People think &ldquo;call Mum&rdquo;, not &ldquo;open the dialer&rdquo;. The home screen should meet you at the task and handle the plumbing.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">02</span>
+            <div>
+              <h4>Your Habits Stay on Your Phone</h4>
+              <p>No account, no ads, no analytics. Everything it learns about you is stored on your phone, deleted automatically after 180 days, and can be cleared whenever you like.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">03</span>
+            <div>
+              <h4>Explain, Don&rsquo;t Guess</h4>
+              <p>Suggestions show their reasoning and stay put, so the screen never reshuffles under your thumb. If Ops One isn&rsquo;t sure, it doesn&rsquo;t pretend to be.</p>
+            </div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">04</span>
+            <div>
+              <h4>A Home Screen Must Never Fail</h4>
+              <p>If something goes wrong, a simple backup app list takes over, so you can always reach your apps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="product-cta">
+      <div class="container">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Coming to Google Play</h2>
+        <p>Ops One Launcher is in testing now and will be available on Google Play before the end of 2026. Get in touch if you&rsquo;d like to try it early. Read the <a href="privacy-ops-one-launcher.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">Ops One Launcher Privacy Policy</a> to see exactly what it reads and keeps on your phone.</p>
+        <div class="product-cta-actions">
+          <a href="index.html#contact" class="btn btn-accent">Contact Us</a>
+          <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-v">V</span><span class="logo-ortex">ORTEX</span><span class="logo-sub">TECHNOLOGIES</span>
+        </a>
+        <p class="footer-tagline">Building software products from Jamaica for the world.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy-ops-one-launcher.html">Ops One Launcher Privacy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="security-policy.html">Security Policy</a>
+        <a href="data-deletion.html">Data Deletion</a>
+      </nav>
+      <div class="footer-copy">
+        <p>&copy; 2026 Vortex Technologies Limited. All Rights Reserved.</p>
+        <p>vtechs.com.jm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
