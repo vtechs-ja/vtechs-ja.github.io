@@ -28,6 +28,33 @@
       letter-spacing: 0.02em;
     }
     .product-hero-icon { background: rgba(92,200,230,0.12); color: #5CC8E6; }
+    .product-hero-icon { overflow: hidden; }
+    .product-hero-icon img { width: 100%; height: 100%; border-radius: 0; }
+    .shot-row {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 8px 4px 20px;
+      margin: 0 -4px;
+    }
+    .shot { flex: 0 0 auto; width: 240px; margin: 0; scroll-snap-align: start; }
+    .shot img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 22px;
+      border: 1px solid rgba(8,12,19,0.18);
+      box-shadow: 0 12px 32px rgba(8,12,19,0.22);
+    }
+    .shot figcaption {
+      margin-top: 12px;
+      font-family: 'Rajdhani', var(--font-head);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+      text-align: center;
+    }
     .verb-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
     .verb-chip {
       font-family: 'Rajdhani', var(--font-head);
@@ -73,7 +100,7 @@
           <a href="index.html">Home</a> &rarr; <a href="index.html#products">Products</a> &rarr; Ops One Launcher
         </div>
         <div class="product-hero-top">
-          <div class="product-hero-icon">&#9672;</div>
+          <div class="product-hero-icon"><img src="images/ops-one-icon.png" alt="Ops One Launcher icon"></div>
         </div>
         <span class="product-hero-status"><span class="badge-dot"></span>Coming Soon</span>
         <h1>Ops One Launcher</h1>
@@ -85,6 +112,23 @@
         </div>
         <div class="product-hero-actions">
           <a href="index.html#products" class="btn btn-ghost">&larr; Back to Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">See It</span>
+          <h2 class="section-title">A home screen that explains itself</h2>
+          <p class="section-desc" style="margin:0;">Screens from the app running on a test phone, using made-up contacts.</p>
+        </div>
+        <div class="shot-row">
+          <figure class="shot"><img src="images/ops-one/01-now.png" width="1080" height="2160" loading="lazy" alt="The Now screen with suggested apps and pinned actions on a dark navy theme"><figcaption>Suggestions that say why</figcaption></figure>
+          <figure class="shot"><img src="images/ops-one/02-people.png" width="1080" height="2160" loading="lazy" alt="The People screen with favourite and recent contacts"><figcaption>Your people, one tap away</figcaption></figure>
+          <figure class="shot"><img src="images/ops-one/04-retro-now.png" width="1080" height="2160" loading="lazy" alt="The Now screen in the Retro Frame theme with orange and blue panels"><figcaption>Retro Frame</figcaption></figure>
+          <figure class="shot"><img src="images/ops-one/05-light-now.png" width="1080" height="2160" loading="lazy" alt="The Now screen in the Light look"><figcaption>Light looks for every theme</figcaption></figure>
         </div>
       </div>
     </section>
