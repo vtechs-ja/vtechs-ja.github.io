@@ -1,12 +1,12 @@
 {
   "name": "Ontrack",
   "slug": "kcfa-membership",
-  "version": "0.15.1",
-  "download_url": "https://vtechs.com.jm/releases/kcfa-membership-0.15.1.zip",
+  "version": "0.16.0",
+  "download_url": "https://vtechs.com.jm/releases/kcfa-membership-0.16.0.zip",
   "requires": "6.0",
   "tested": "6.5",
   "requires_php": "7.4",
-  "last_updated": "2026-10-14 00:20:39",
+  "last_updated": "2026-10-15 01:19:30",
   "icons": {
     "1x": "https://vtechs.com.jm/plugin-assets/icon-128x128.png",
     "2x": "https://vtechs.com.jm/plugin-assets/icon-256x256.png"
